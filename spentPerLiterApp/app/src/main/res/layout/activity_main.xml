@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="8dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14dp"
+        android:textColor="@color/main_celestial_blue"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="5dp"
+        android:text="@string/distance_main_activity" />
+
+    <EditText
+        android:id="@+id/edit_distance_main_activity"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/rounded_border_light_green_input"
+        android:fontFamily="@font/armata"
+        android:inputType="numberDecimal"
+        android:paddingHorizontal="6dp"
+        android:textColor="@color/main_celestial_blue" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14dp"
+        android:textColor="@color/main_celestial_blue"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="5dp"
+        android:text="@string/price_per_liter_main_activity" />
+
+    <EditText
+        android:id="@+id/edit_price_per_liter_activity"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/rounded_border_light_green_input"
+        android:fontFamily="@font/armata"
+        android:inputType="numberDecimal"
+        android:paddingHorizontal="6dp"
+        android:textColor="@color/main_celestial_blue" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14dp"
+        android:textColor="@color/main_celestial_blue"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="5dp"
+        android:text="@string/autonomy_per_km" />
+
+    <EditText
+        android:id="@+id/edit_autonomy_vehicle_main_activity"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/rounded_border_light_green_input"
+        android:fontFamily="@font/armata"
+        android:inputType="numberDecimal"
+        android:paddingHorizontal="6dp"
+        android:textColor="@color/main_celestial_blue" />
+
+    <Button
+        android:id="@+id/button_calculate_main_activity"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="@color/main_green"
+        android:fontFamily="@font/armata"
+        android:text="@string/calculate_btn_main_activity"
+        android:textAllCaps="true"
+        android:textColor="@color/main_celestial_blue"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:cornerRadius="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/armata"
+        android:text="@string/your_total_cost_main_activity"
+        android:textColor="@color/main_celestial_blue"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/text_final_cost_main_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/armata"
+        android:text="R$ 0"
+        android:textColor="@color/main_celestial_blue"
+        android:textSize="45sp"
+        android:textStyle="bold" />
+
+
+</LinearLayout>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">spentPerLiterApp</string>
+    <string name="your_total_cost_main_activity">Seu gasto total será de</string>
+    <string name="distance_main_activity">Distância (KMs)</string>
+    <string name="price_per_liter_main_activity">Preço por litro</string>
+    <string name="autonomy_per_km">Autonomia do veículo</string>
+    <string name="calculate_btn_main_activity">Calcular</string>
+    <string name="validation_fill_distance_field">Preencha o campo \'Distância\'</string>
+    <string name="validation_fill_price_field">Preencha o campo \'preço por litro\'</string>
+    <string name="validation_fill_autonomy_field">Preencha o campo \'Autonomia\'</string>
+    <string name="validation_error_invalid_values">Erro: Valores inválidos detectados</string>
+    <string name="validation_invalid_zero_autonomy">O valor de \'autonomia\' não pode ser 0</string>
+</resources>
