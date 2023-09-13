@@ -12,11 +12,11 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="14dp"
-        android:textColor="@color/main_celestial_blue"
         android:layout_marginTop="20dp"
         android:layout_marginBottom="5dp"
-        android:text="@string/distance_main_activity" />
+        android:text="@string/distance_main_activity"
+        android:textColor="@color/main_celestial_blue"
+        android:textSize="14dp" />
 
     <EditText
         android:id="@+id/edit_distance_main_activity"
@@ -31,11 +31,11 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="14dp"
-        android:textColor="@color/main_celestial_blue"
         android:layout_marginTop="15dp"
         android:layout_marginBottom="5dp"
-        android:text="@string/price_per_liter_main_activity" />
+        android:text="@string/price_per_liter_main_activity"
+        android:textColor="@color/main_celestial_blue"
+        android:textSize="14dp" />
 
     <EditText
         android:id="@+id/edit_price_per_liter_activity"
@@ -50,11 +50,11 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="14dp"
-        android:textColor="@color/main_celestial_blue"
         android:layout_marginTop="15dp"
         android:layout_marginBottom="5dp"
-        android:text="@string/autonomy_per_km" />
+        android:text="@string/autonomy_per_km"
+        android:textColor="@color/main_celestial_blue"
+        android:textSize="14dp" />
 
     <EditText
         android:id="@+id/edit_autonomy_vehicle_main_activity"
@@ -65,6 +65,30 @@
         android:inputType="numberDecimal"
         android:paddingHorizontal="6dp"
         android:textColor="@color/main_celestial_blue" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:background="@color/clean_green"
+        android:padding="7dp"
+        android:paddingHorizontal="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="2dp"
+            android:text="@string/is_round_trip_main_activity"
+            android:textColor="@color/main_celestial_blue"
+            android:textSize="14dp" />
+
+        <Switch
+            android:id="@+id/switch_round_trip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/main_celestial_blue"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+    </LinearLayout>
 
     <Button
         android:id="@+id/button_calculate_main_activity"

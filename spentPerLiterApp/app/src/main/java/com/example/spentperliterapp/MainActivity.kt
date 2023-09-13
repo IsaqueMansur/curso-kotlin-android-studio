@@ -65,12 +65,15 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     }
 
     private fun calculate() {
-        if (validateInfos()) {
-            val distance = binding.editDistanceMainActivity.text.toString().toFloat()
-            val price = binding.editPricePerLiterActivity.text.toString().toFloat()
-            val autonomy = binding.editAutonomyVehicleMainActivity.text.toString().toFloat()
-            val result = (distance * price) / autonomy
-            binding.textFinalCostMainActivity.text = "R$ ${"%.2f".format(result)}"
-        }
+        if (!validateInfos()) return
+
+        val distance = binding.editDistanceMainActivity.text.toString().toFloat()
+        val price = binding.editPricePerLiterActivity.text.toString().toFloat()
+        val autonomy = binding.editAutonomyVehicleMainActivity.text.toString().toFloat()
+
+        val roundTripMultiplier = if (binding.switchRoundTrip.isChecked) 2 else 1
+        val result = (distance * price / autonomy) * roundTripMultiplier
+
+        binding.textFinalCostMainActivity.text = "R$ ${"%.2f".format(result)}"
     }
 }
