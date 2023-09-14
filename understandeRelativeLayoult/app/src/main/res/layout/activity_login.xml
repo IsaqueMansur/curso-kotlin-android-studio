@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary_background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:paddingHorizontal="15dp">
+
+        <EditText
+            android:id="@+id/edit_email"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/white"
+            android:hint="@string/email"
+            android:paddingLeft="10dp" />
+
+        <EditText
+            android:id="@+id/edit_password"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@id/edit_email"
+            android:layout_marginTop="15dp"
+            android:background="@color/white"
+            android:hint="@string/password"
+            android:paddingLeft="10dp" />
+
+        <Button
+            android:id="@+id/button_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edit_password"
+            android:layout_marginTop="15dp"
+            android:backgroundTint="@color/primary_button"
+            android:text="@string/login"
+            android:textAllCaps="true"
+            android:textColor="@color/primary_text_dark"
+            android:textSize="30sp"
+            app:cornerRadius="5dp" />
+
+        <TextView
+            android:id="@+id/text_ask_cadaster"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/button_login"
+            android:layout_marginTop="25dp"
+            android:text="@string/dont_has_cadaster_ask"
+            android:textColor="@color/primary_text_light"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/text_cadaster_now"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/text_ask_cadaster"
+            android:layout_marginLeft="5dp"
+            android:layout_toEndOf="@id/text_ask_cadaster"
+            android:text="@string/cadaster_now"
+            android:textColor="@color/primary_text_light"
+            android:textSize="17sp" />
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/image_question"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/ic_question_circle" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="4dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toEndOf="@id/image_question"
+        android:gravity="center"
+        android:text="@string/forgot_password"
+        android:textColor="@color/primary_text_dark"
+        android:textSize="17sp" />
+
+
+</RelativeLayout>

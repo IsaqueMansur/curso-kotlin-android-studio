@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">understandeRelativeLayoult</string>
+    <string name="distance">Distância (KMs)</string>
+    <string name="price">Preço (R$)</string>
+    <string name="autonomy">Autonomia (KMs/L)</string>
+    <string name="total_cost">Gasto total</string>
+    <string name="zero_money_reais_br">R$ 0</string>
+    <string name="calculate_btn">Calcular</string>
+    <string name="email">E-mail</string>
+    <string name="password">Senha</string>
+    <string name="dont_has_cadaster_ask">Ainda não é cadastrado ?</string>
+    <string name="cadaster_now">Cadastrar agora.</string>
+    <string name="forgot_password">Esqueci minha senha</string>
+    <string name="login">Login</string>
+</resources>
