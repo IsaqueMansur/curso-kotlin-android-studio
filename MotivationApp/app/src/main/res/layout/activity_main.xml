@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/layoult_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_border_bottom_primary"
+        android:padding="8dp">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_home" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_chat" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/main_hello"
+        android:layout_below="@id/layoult_menu"
+        android:layout_marginTop="10dp"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/text_motivation_phrase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/main_phrase"
+        android:textSize="18sp"
+        android:textColor="@color/primary_text"/>
+
+    <View
+        android:layout_width="128dp"
+        android:layout_height="4dp"
+        android:layout_below="@id/text_motivation_phrase"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:background="@color/primary_background" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:paddingHorizontal="50dp"
+        android:text="@string/generate"
+        android:textAllCaps="true"
+        app:cornerRadius="5dp"
+        android:backgroundTint="@color/primary_background"
+        android:textColor="@color/primary_text"/>
+
+
+</RelativeLayout>
